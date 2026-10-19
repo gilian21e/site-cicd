@@ -1,0 +1,1379 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#211A17">
+  <meta name="description" content="InJazz — джазовая кофейня в Санкт-Петербурге. Кофе собственной обжарки, уютный интерьер и живой джаз по пятницам. ул. Бродского, 4.">
+  <meta name="color-scheme" content="light">
+  <title>InJazz — джазовая кофейня в Санкт-Петербурге</title>
+
+  <!-- Превью ссылки в мессенджерах и соцсетях (Open Graph) -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:site_name" content="InJazz">
+  <meta property="og:title" content="InJazz — джазовая кофейня в Санкт-Петербурге">
+  <meta property="og:description" content="Кофе собственной обжарки, уютный интерьер и живой джаз по пятницам. ул. Бродского, 4.">
+  <meta property="og:url" content="https://gilian21e.github.io/injazz-lr4/">
+  <meta property="og:image" content="https://gilian21e.github.io/injazz-lr4/images/jazz-saxophone.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://images.unsplash.com">
+
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <script>
+    /* Если JS отключён, контент и меню остаются доступными. */
+    document.documentElement.classList.add("js");
+  </script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Перейти к содержимому</a>
+
+  <noscript>
+    <p class="noscript-note">
+      JavaScript отключён. Все разделы сайта доступны, но фильтрация меню
+      и проверка демонстрационной формы не работают.
+    </p>
+  </noscript>
+
+  <!-- ===================== HEADER ===================== -->
+
+  <header class="header">
+    <div class="container header__inner">
+      <a class="brand" href="#home" aria-label="InJazz — на главную">
+        <span class="brand__name">In<span>Jazz</span></span>
+        <span class="brand__tagline">COFFEE · VINYL · LIVE JAZZ</span>
+      </a>
+
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-label="Открыть меню"
+        aria-controls="primary-nav"
+        aria-expanded="false"
+      >
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav" id="primary-nav" aria-label="Основная навигация">
+        <a class="nav__link" href="#about">О кофейне</a>
+        <a class="nav__link" href="#menu">Кофе и меню</a>
+        <a class="nav__link" href="#jazz">Джазовые вечера</a>
+        <a class="nav__link" href="#contacts">Контакты</a>
+        <a class="button header__cta nav__mobile-cta" href="#booking">
+          Забронировать <span class="arrow" aria-hidden="true">↗</span>
+        </a>
+      </nav>
+
+      <a class="button header__cta" href="#booking">
+        Забронировать <span class="arrow" aria-hidden="true">↗</span>
+      </a>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ===================== HERO ===================== -->
+
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="hero__image" aria-hidden="true">
+        <img
+          src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?auto=format&fit=crop&w=2000&q=85"
+          alt=""
+          fetchpriority="high"
+          width="2000"
+          height="1400"
+        >
+      </div>
+
+      <div class="container">
+        <div class="hero__content">
+          <div class="eyebrow hero__eyebrow">
+            Specialty coffee & live jazz
+          </div>
+
+          <h1 id="hero-title">
+            Город<br>
+            звучит.<br>
+            Кофе <em>раскрывается.</em>
+          </h1>
+
+          <p class="hero__description">
+            Кофе собственной обжарки, музыка, которая не торопит,
+            и пространство, в котором Петербург становится немного уютнее.
+            Заходите на чашку кофе или оставайтесь на джазовый вечер.
+          </p>
+
+          <div class="hero__actions">
+            <a class="button" href="#booking">
+              Забронировать столик
+              <span class="arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="button button--outline" href="#menu">
+              Посмотреть меню
+              <span class="arrow" aria-hidden="true">↓</span>
+            </a>
+          </div>
+
+          <div class="hero__location">
+            Санкт-Петербург · ул. Бродского, 4
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__side-note" aria-hidden="true">
+        <span>01 /</span> Find your rhythm
+      </div>
+    </section>
+
+    <!-- ===================== INFO STRIP ===================== -->
+
+    <div class="info-strip" aria-label="О кофейне в нескольких словах">
+      <div class="container info-strip__inner">
+        <div class="info-strip__item">
+          <span class="info-strip__number" aria-hidden="true">01</span>
+          <span class="info-strip__label">
+            Своя обжарка
+            <small>Внимание к каждому зерну</small>
+          </span>
+        </div>
+
+        <div class="info-strip__item">
+          <span class="info-strip__number" aria-hidden="true">02</span>
+          <span class="info-strip__label">
+            Живой джаз
+            <small>Музыкальные вечера по пятницам</small>
+          </span>
+        </div>
+
+        <div class="info-strip__item">
+          <span class="info-strip__number" aria-hidden="true">03</span>
+          <span class="info-strip__label">
+            Свой ритм
+            <small>От первого кофе до последней ноты</small>
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===================== ABOUT ===================== -->
+
+    <section class="section section--cream" id="about" aria-labelledby="about-title">
+      <div class="container">
+        <div class="about__grid">
+          <div class="about__visual reveal">
+            <div class="image-frame about__image">
+              <img
+                src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1000&q=85"
+                alt="Приготовление кофе в тёплой атмосфере кофейни"
+                width="1000"
+                height="1250"
+                loading="lazy"
+                decoding="async"
+              >
+            </div>
+
+            <div class="about__stamp" aria-label="Кофе и музыка">
+              <strong>InJ</strong>
+              <span>Кофе в своём ритме</span>
+            </div>
+          </div>
+
+          <div class="about__content reveal">
+            <div class="eyebrow">Наша философия</div>
+
+            <h2 id="about-title">
+              Место, где кофе встречается с музыкой
+            </h2>
+
+            <p>
+              У хорошего кофе и хорошего джаза есть кое-что общее:
+              их не хочется торопить. В InJazz мы объединяем культуру
+              specialty coffee с любовью к живому звучанию и простым
+              городским радостям.
+            </p>
+
+            <p>
+              Здесь можно начать утро с эспрессо, провести несколько часов
+              за работой, встретиться с друзьями или прийти вечером,
+              чтобы услышать музыку и ненадолго замедлиться.
+            </p>
+
+            <div class="about__signature">Найдите свой ритм</div>
+          </div>
+        </div>
+
+        <div class="features">
+          <article class="feature reveal">
+            <span class="feature__index">01 /</span>
+            <h3>Своя обжарка</h3>
+            <p>
+              Вкус начинается с зерна. Мы уделяем внимание обжарке,
+              аромату и способу приготовления каждой чашки.
+            </p>
+          </article>
+
+          <article class="feature reveal">
+            <span class="feature__index">02 /</span>
+            <h3>Живой джаз</h3>
+            <p>
+              По пятницам кофейня наполняется живой музыкой.
+              Актуальную программу выступлений уточняйте перед визитом.
+            </p>
+          </article>
+
+          <article class="feature reveal">
+            <span class="feature__index">03 /</span>
+            <h3>Своя атмосфера</h3>
+            <p>
+              Дерево, мягкий свет, музыка и пространство для встреч,
+              сосредоточенной работы или тихого отдыха.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== MENU ===================== -->
+
+    <section class="section section--dark" id="menu" aria-labelledby="menu-title">
+      <div class="container">
+        <div class="menu-section__top">
+          <div class="section-heading">
+            <div class="eyebrow">Ваша следующая любимая чашка</div>
+            <h2 id="menu-title">Хороший кофе —<br>отдельный ритуал</h2>
+          </div>
+
+          <p class="section-intro">
+            От выразительного эспрессо до напитков, которыми приятно
+            наслаждаться не спеша. Выбирайте свой вкус и настроение.
+          </p>
+        </div>
+
+        <!--
+          Демонстрационные цены.
+          Перед публикацией замените названия, описания и стоимость
+          на актуальные данные заведения.
+        -->
+
+        <div class="menu-tabs" role="tablist" aria-label="Категории меню">
+          <button
+            class="menu-tab"
+            type="button"
+            role="tab"
+            id="tab-coffee"
+            aria-controls="menu-items"
+            aria-selected="true"
+            tabindex="0"
+            data-category="coffee"
+          >Классический кофе</button>
+
+          <button
+            class="menu-tab"
+            type="button"
+            role="tab"
+            id="tab-signature"
+            aria-controls="menu-items"
+            aria-selected="false"
+            tabindex="-1"
+            data-category="signature"
+          >Авторские напитки</button>
+
+          <button
+            class="menu-tab"
+            type="button"
+            role="tab"
+            id="tab-other"
+            aria-controls="menu-items"
+            aria-selected="false"
+            tabindex="-1"
+            data-category="other"
+          >Чай и другое</button>
+
+          <button
+            class="menu-tab"
+            type="button"
+            role="tab"
+            id="tab-desserts"
+            aria-controls="menu-items"
+            aria-selected="false"
+            tabindex="-1"
+            data-category="desserts"
+          >Десерты</button>
+        </div>
+
+        <div class="menu-grid" id="menu-items" role="tabpanel" aria-labelledby="tab-coffee" tabindex="0" aria-live="polite">
+          <div class="menu-item">
+            <div class="menu-item__body">
+              <h3 class="menu-item__title">Эспрессо</h3>
+              <p class="menu-item__description">Концентрированный вкус и аромат свежего зерна</p>
+            </div>
+            <span class="menu-item__dots" aria-hidden="true"></span>
+            <span class="menu-item__price">180 ₽</span>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item__body">
+              <h3 class="menu-item__title">Американо</h3>
+              <p class="menu-item__description">Классический кофе с чистым вкусом</p>
+            </div>
+            <span class="menu-item__dots" aria-hidden="true"></span>
+            <span class="menu-item__price">220 ₽</span>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item__body">
+              <h3 class="menu-item__title">Капучино</h3>
+              <p class="menu-item__description">Эспрессо и нежная молочная текстура</p>
+            </div>
+            <span class="menu-item__dots" aria-hidden="true"></span>
+            <span class="menu-item__price">280 ₽</span>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item__body">
+              <h3 class="menu-item__title">Флэт уайт</h3>
+              <p class="menu-item__description">Насыщенный кофе с бархатным молоком</p>
+            </div>
+            <span class="menu-item__dots" aria-hidden="true"></span>
+            <span class="menu-item__price">300 ₽</span>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item__body">
+              <h3 class="menu-item__title">Латте</h3>
+              <p class="menu-item__description">Мягкий молочный вкус и эспрессо</p>
+            </div>
+            <span class="menu-item__dots" aria-hidden="true"></span>
+            <span class="menu-item__price">300 ₽</span>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item__body">
+              <h3 class="menu-item__title">Фильтр-кофе</h3>
+              <p class="menu-item__description">Чтобы почувствовать характер зерна</p>
+            </div>
+            <span class="menu-item__dots" aria-hidden="true"></span>
+            <span class="menu-item__price">250 ₽</span>
+          </div>
+        </div>
+
+        <p class="menu-note">
+          <span class="menu-note__mark" aria-hidden="true">＊</span>
+          <span>
+            <strong>Обратите внимание.</strong>
+            Цены и позиции в этом меню — демонстрационные примеры,
+            а не подтверждённый прайс действующего заведения.
+            Актуальное меню и наличие позиций уточняйте перед посещением.
+          </span>
+        </p>
+      </div>
+    </section>
+
+    <!-- ===================== JAZZ ===================== -->
+
+    <section class="section section--cream" id="jazz" aria-labelledby="jazz-title">
+      <div class="container">
+        <div class="jazz__grid">
+          <div class="jazz__content reveal">
+            <div class="eyebrow">Живой звук · Тёплый свет</div>
+
+            <h2 id="jazz-title">Пятница звучит по-другому</h2>
+
+            <p>
+              Иногда идеальный вечер — это негромкий разговор, любимый
+              напиток и музыка, которую хочется слушать с закрытыми глазами.
+              По пятницам InJazz становится местом встречи с живым джазом
+              в камерной атмосфере.
+            </p>
+
+            <p>
+              Приходите вдвоём, собирайтесь небольшой компанией или
+              просто подарите себе вечер без спешки.
+            </p>
+
+            <div class="jazz__schedule">
+              <div class="jazz__day">Пт</div>
+              <div class="jazz__schedule-text">
+                <strong>Вечера живого джаза</strong>
+                <span>Регулярность: по пятницам</span>
+                <span>Актуальная программа — уточняйте перед визитом.</span>
+              </div>
+            </div>
+
+            <a class="button" href="#booking">
+              Забронировать столик
+              <span class="arrow" aria-hidden="true">↗</span>
+            </a>
+          </div>
+
+          <div class="jazz__visual reveal">
+            <div class="image-frame jazz__image">
+              <img
+                src="images/jazz-saxophone.jpg"
+                alt="Саксофонист на сцене во время джазового вечера"
+                width="1400"
+                height="933"
+                loading="lazy"
+                decoding="async"
+              >
+            </div>
+
+            <div class="jazz__caption">
+              Let the music
+              find you.
+              <small>Вечера InJazz</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== GALLERY ===================== -->
+
+    <section class="section section--cream" id="atmosphere" aria-labelledby="gallery-title" style="padding-top: 0;">
+      <div class="container">
+        <div class="gallery__header">
+          <div>
+            <div class="eyebrow">Детали имеют значение</div>
+            <h2 id="gallery-title">Атмосфера InJazz</h2>
+          </div>
+
+          <p>
+            Вкус, фактуры и свет. Пространство для моментов,
+            которые хочется проживать не торопясь.
+          </p>
+        </div>
+
+        <div class="gallery">
+          <div class="gallery__item image-frame reveal">
+            <img
+              src="images/interior-bar.jpg"
+              alt="Барная стойка с тёплыми лампами накаливания"
+              width="1000"
+              height="1334"
+              loading="lazy"
+              decoding="async"
+            >
+          </div>
+
+          <div class="gallery__item image-frame reveal">
+            <img
+              src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=700&q=80"
+              alt="Чашка свежеприготовленного кофе"
+              width="700"
+              height="500"
+              loading="lazy"
+              decoding="async"
+            >
+          </div>
+
+          <div class="gallery__item image-frame reveal">
+            <img
+              src="images/barista.jpg"
+              alt="Бариста держит капучино с латте-артом"
+              width="1000"
+              height="666"
+              loading="lazy"
+              decoding="async"
+            >
+          </div>
+
+          <div class="gallery__item image-frame reveal">
+            <img
+              src="images/vinyl-turntable.jpg"
+              alt="Виниловая пластинка на проигрывателе"
+              width="1200"
+              height="916"
+              loading="lazy"
+              decoding="async"
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== BOOKING ===================== -->
+
+    <section class="section booking" id="booking" aria-labelledby="booking-title">
+      <div class="container booking__grid">
+        <div class="booking__intro">
+          <div class="eyebrow">Оставьте суету за дверью</div>
+
+          <h2 id="booking-title">Ваш вечер начинается здесь</h2>
+
+          <p>
+            Запланируйте встречу, неспешный кофе или пятничный музыкальный
+            вечер. Заполните форму, чтобы подготовить заявку на посещение.
+          </p>
+
+          <p>
+            Сейчас форма работает в демонстрационном режиме и не отправляет
+            данные сотрудникам кофейни. Заполнение не означает подтверждение
+            бронирования.
+          </p>
+
+          <div class="booking__details">
+            <div class="booking__detail">
+              <span>Адрес</span>
+              <strong>ул. Бродского, 4</strong>
+            </div>
+
+            <div class="booking__detail">
+              <span>Режим работы</span>
+              <strong>Ежедневно, 8:00–22:00</strong>
+            </div>
+
+            <div class="booking__detail">
+              <span>Статус формы</span>
+              <strong>Демонстрационная</strong>
+            </div>
+          </div>
+        </div>
+
+        <form class="booking__form" id="booking-form" novalidate>
+          <div class="form-field">
+            <label for="guest-name">Ваше имя *</label>
+            <input
+              id="guest-name"
+              name="name"
+              type="text"
+              autocomplete="name"
+              placeholder="Как к вам обращаться"
+              minlength="2"
+              maxlength="80"
+              required
+            >
+            <span class="form-error" id="name-error"></span>
+          </div>
+
+          <div class="form-field">
+            <label for="guest-phone">Номер телефона *</label>
+            <input
+              id="guest-phone"
+              name="phone"
+              type="tel"
+              inputmode="tel"
+              autocomplete="tel"
+              placeholder="+7 999 123-45-67"
+              maxlength="30"
+              required
+            >
+            <span class="form-error" id="phone-error"></span>
+          </div>
+
+          <div class="form-field">
+            <label for="visit-date">Дата посещения *</label>
+            <input
+              id="visit-date"
+              name="date"
+              type="date"
+              required
+            >
+            <span class="form-error" id="date-error"></span>
+          </div>
+
+          <div class="form-field">
+            <label for="visit-time">Время посещения *</label>
+            <select id="visit-time" name="time" required>
+              <option value="">Выберите время</option>
+              <option value="08:00">08:00</option>
+              <option value="09:00">09:00</option>
+              <option value="10:00">10:00</option>
+              <option value="11:00">11:00</option>
+              <option value="12:00">12:00</option>
+              <option value="13:00">13:00</option>
+              <option value="14:00">14:00</option>
+              <option value="15:00">15:00</option>
+              <option value="16:00">16:00</option>
+              <option value="17:00">17:00</option>
+              <option value="18:00">18:00</option>
+              <option value="19:00">19:00</option>
+              <option value="20:00">20:00</option>
+              <option value="21:00">21:00</option>
+            </select>
+            <span class="form-error" id="time-error"></span>
+          </div>
+
+          <div class="form-field form-field--full">
+            <label for="guest-count">Количество гостей *</label>
+            <select id="guest-count" name="guests" required>
+              <option value="">Выберите количество</option>
+              <option value="1">1 гость</option>
+              <option value="2">2 гостя</option>
+              <option value="3">3 гостя</option>
+              <option value="4">4 гостя</option>
+              <option value="5">5 гостей</option>
+              <option value="6">6 гостей</option>
+              <option value="7+">Более 6 гостей</option>
+            </select>
+            <span class="form-error" id="guests-error"></span>
+          </div>
+
+          <div class="form-field form-field--full">
+            <label for="guest-comment">Комментарий (необязательно)</label>
+            <textarea
+              id="guest-comment"
+              name="comment"
+              maxlength="500"
+              placeholder="Пожелания к посещению"
+            ></textarea>
+          </div>
+
+          <label class="form-consent" for="demo-consent">
+            <input id="demo-consent" name="consent" type="checkbox" required>
+            <span>
+              Я согласен(на) на обработку данных для демонстрации формы.
+              Реальную политику обработки персональных данных необходимо
+              добавить перед публикацией.
+            </span>
+          </label>
+
+          <p class="form-error form-field--full" id="consent-error"></p>
+
+          <button class="button" type="submit">
+            Отправить заявку
+            <span class="arrow" aria-hidden="true">↗</span>
+          </button>
+
+          <p
+            class="form-status"
+            id="form-status"
+            role="status"
+            aria-live="polite"
+          ></p>
+        </form>
+      </div>
+    </section>
+
+    <!-- ===================== CONTACTS ===================== -->
+
+    <section class="section section--cream" id="contacts" aria-labelledby="contacts-title">
+      <div class="container contacts__grid">
+        <div class="contacts__content reveal">
+          <div class="eyebrow">Мы рядом с вами</div>
+
+          <h2 id="contacts-title">Найдите свой ритм</h2>
+
+          <p>
+            Загляните за утренним кофе, устройте рабочую паузу
+            или спланируйте встречу с музыкой. Будем рады вашему визиту.
+          </p>
+
+          <div class="contact-block">
+            <span class="contact-block__label">Адрес</span>
+            <div class="contact-block__value">Санкт-Петербург</div>
+            <span class="contact-block__subvalue">ул. Бродского, 4</span>
+          </div>
+
+          <div class="contact-block">
+            <span class="contact-block__label">Часы работы</span>
+            <div class="contact-block__value">08:00 — 22:00</div>
+            <span class="contact-block__subvalue">Ежедневно</span>
+          </div>
+
+          <!--
+            Добавьте подтверждённый телефон в href и текст,
+            когда получите реальные контактные данные.
+          -->
+          <div class="contact-block">
+            <span class="contact-block__label">Телефон</span>
+            <div class="contact-block__value">Уточняется</div>
+            <span class="contact-block__subvalue">
+              Контактный номер нужно добавить перед публикацией.
+            </span>
+          </div>
+
+          <div class="contacts__actions">
+            <a
+              class="button"
+              href="https://yandex.ru/maps/?text=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3%2C%20%D1%83%D0%BB%D0%B8%D1%86%D0%B0%20%D0%91%D1%80%D0%BE%D0%B4%D1%81%D0%BA%D0%BE%D0%B3%D0%BE%2C%204"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Построить маршрут
+              <span class="arrow" aria-hidden="true">↗</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="contacts__visual reveal">
+          <div class="image-frame contacts__image">
+            <img
+              src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=1200&q=85"
+              alt="Кофейня с оборудованием для приготовления свежего кофе"
+              width="1200"
+              height="960"
+              loading="lazy"
+              decoding="async"
+            >
+          </div>
+
+          <a
+            class="contacts__map-label"
+            href="https://yandex.ru/maps/?text=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3%2C%20%D1%83%D0%BB%D0%B8%D1%86%D0%B0%20%D0%91%D1%80%D0%BE%D0%B4%D1%81%D0%BA%D0%BE%D0%B3%D0%BE%2C%204"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span>
+              InJazz · Санкт-Петербург
+              <small>ул. Бродского, 4 · Открыть карту</small>
+            </span>
+            <span class="arrow" aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__main">
+        <div class="footer__brand">
+          <a class="brand" href="#home" aria-label="InJazz — на главную">
+            <span class="brand__name">In<span>Jazz</span></span>
+            <span class="brand__tagline">COFFEE · VINYL · LIVE JAZZ</span>
+          </a>
+
+          <p>
+            Кофе собственной обжарки, живой джаз и пространство
+            для тех, кто любит свой ритм.
+          </p>
+        </div>
+
+        <div>
+          <div class="footer__heading">Навигация</div>
+          <nav class="footer__links" aria-label="Навигация в подвале">
+            <a href="#about">О кофейне</a>
+            <a href="#menu">Кофе и меню</a>
+            <a href="#jazz">Джазовые вечера</a>
+            <a href="#atmosphere">Атмосфера</a>
+            <a href="#booking">Бронирование</a>
+          </nav>
+        </div>
+
+        <div>
+          <div class="footer__heading">Приходите в гости</div>
+          <div class="footer__address">
+            Санкт-Петербург<br>
+            ул. Бродского, 4<br><br>
+            Ежедневно<br>
+            08:00–22:00
+          </div>
+          <div class="footer__links" style="margin-top: 16px;">
+            <a
+              href="https://yandex.ru/maps/?text=%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3%2C%20%D1%83%D0%BB%D0%B8%D1%86%D0%B0%20%D0%91%D1%80%D0%BE%D0%B4%D1%81%D0%BA%D0%BE%D0%B3%D0%BE%2C%204"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Открыть карту ↗
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <span>© <span id="current-year">2026</span> InJazz. Все права защищены.</span>
+        <a href="#booking" aria-label="Информация об обработке данных в демонстрационной форме">
+          Информация о персональных данных
+        </a>
+        <span>Сделано с вниманием к деталям.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    "use strict";
+
+    /* =========================================================
+       INJAZZ — JAVASCRIPT
+       Меню, мобильная навигация, форма и ненавязчивая анимация.
+       ========================================================= */
+
+    document.addEventListener("DOMContentLoaded", function () {
+      /* ---------- Общие настройки ---------- */
+
+      const CONFIG = {
+        // Демонстрационный режим.
+        // Перед интеграцией укажите endpoint реального сервиса
+        // и настройте серверную проверку, CORS и защиту от спама.
+        bookingEndpoint: "",
+        demoMode: true
+      };
+
+      /* ---------- Текущий год ---------- */
+
+      const yearElement = document.getElementById("current-year");
+
+      if (yearElement) {
+        yearElement.textContent = String(new Date().getFullYear());
+      }
+
+      /* ---------- Мобильная навигация ---------- */
+
+      const menuToggle = document.querySelector(".menu-toggle");
+      const nav = document.getElementById("primary-nav");
+      const navLinks = nav ? nav.querySelectorAll("a") : [];
+
+      function closeNavigation() {
+        if (!menuToggle || !nav) return;
+
+        menuToggle.setAttribute("aria-expanded", "false");
+        menuToggle.setAttribute("aria-label", "Открыть меню");
+        nav.classList.remove("is-open");
+        document.body.classList.remove("menu-open");
+      }
+
+      function openNavigation() {
+        if (!menuToggle || !nav) return;
+
+        menuToggle.setAttribute("aria-expanded", "true");
+        menuToggle.setAttribute("aria-label", "Закрыть меню");
+        nav.classList.add("is-open");
+        document.body.classList.add("menu-open");
+      }
+
+      if (menuToggle && nav) {
+        menuToggle.addEventListener("click", function () {
+          const isExpanded =
+            menuToggle.getAttribute("aria-expanded") === "true";
+
+          if (isExpanded) {
+            closeNavigation();
+          } else {
+            openNavigation();
+          }
+        });
+
+        navLinks.forEach(function (link) {
+          link.addEventListener("click", closeNavigation);
+        });
+
+        document.addEventListener("keydown", function (event) {
+          if (event.key === "Escape") {
+            const wasOpen =
+              menuToggle.getAttribute("aria-expanded") === "true";
+
+            closeNavigation();
+
+            if (wasOpen) {
+              menuToggle.focus();
+            }
+          }
+        });
+
+        // При переходе с мобильного на десктопный размер
+        // сбрасываем состояние мобильной навигации.
+        window.addEventListener("resize", function () {
+          if (window.innerWidth > 850) {
+            closeNavigation();
+          }
+        });
+      }
+
+      /* ---------- Категории меню ---------- */
+
+      const menuData = {
+        coffee: [
+          {
+            name: "Эспрессо",
+            description: "Концентрированный вкус и аромат свежего зерна",
+            price: "180 ₽"
+          },
+          {
+            name: "Американо",
+            description: "Классический кофе с чистым вкусом",
+            price: "220 ₽"
+          },
+          {
+            name: "Капучино",
+            description: "Эспрессо и нежная молочная текстура",
+            price: "280 ₽"
+          },
+          {
+            name: "Флэт уайт",
+            description: "Насыщенный кофе с бархатным молоком",
+            price: "300 ₽"
+          },
+          {
+            name: "Латте",
+            description: "Мягкий молочный вкус и эспрессо",
+            price: "300 ₽"
+          },
+          {
+            name: "Фильтр-кофе",
+            description: "Чтобы почувствовать характер зерна",
+            price: "250 ₽"
+          }
+        ],
+
+        signature: [
+          {
+            name: "Кофе с апельсином",
+            description: "Цитрусовые ноты и кофейная основа",
+            price: "350 ₽"
+          },
+          {
+            name: "Медовый латте",
+            description: "Молочный кофе с медовой сладостью",
+            price: "340 ₽"
+          },
+          {
+            name: "Пряный раф",
+            description: "Сливочная текстура и мягкие специи",
+            price: "360 ₽"
+          },
+          {
+            name: "Сезонный напиток",
+            description: "Специальное предложение сезона",
+            price: "380 ₽"
+          }
+        ],
+
+        other: [
+          {
+            name: "Чёрный чай",
+            description: "Классический чай для спокойной паузы",
+            price: "220 ₽"
+          },
+          {
+            name: "Зелёный чай",
+            description: "Лёгкий вкус и тонкий аромат",
+            price: "220 ₽"
+          },
+          {
+            name: "Травяной чай",
+            description: "Ароматный настой без кофеина",
+            price: "240 ₽"
+          },
+          {
+            name: "Какао",
+            description: "Тёплый шоколадный напиток",
+            price: "290 ₽"
+          }
+        ],
+
+        desserts: [
+          {
+            name: "Круассан",
+            description: "Классическая выпечка к чашке кофе",
+            price: "220 ₽"
+          },
+          {
+            name: "Чизкейк",
+            description: "Нежный десерт с кремовой текстурой",
+            price: "390 ₽"
+          },
+          {
+            name: "Шоколадный тарт",
+            description: "Насыщенный шоколадный вкус",
+            price: "370 ₽"
+          },
+          {
+            name: "Десерт дня",
+            description: "Уточняйте доступные варианты у бариста",
+            price: "350 ₽"
+          }
+        ]
+      };
+
+      const tabs = Array.from(document.querySelectorAll(".menu-tab"));
+      const menuItemsContainer = document.getElementById("menu-items");
+
+      function renderMenu(category) {
+        if (!menuItemsContainer || !menuData[category]) return;
+
+        const fragment = document.createDocumentFragment();
+
+        menuData[category].forEach(function (item) {
+          const article = document.createElement("article");
+          article.className = "menu-item";
+
+          const body = document.createElement("div");
+          body.className = "menu-item__body";
+
+          const title = document.createElement("h3");
+          title.className = "menu-item__title";
+          title.textContent = item.name;
+
+          const description = document.createElement("p");
+          description.className = "menu-item__description";
+          description.textContent = item.description;
+
+          const dots = document.createElement("span");
+          dots.className = "menu-item__dots";
+          dots.setAttribute("aria-hidden", "true");
+
+          const price = document.createElement("span");
+          price.className = "menu-item__price";
+          price.textContent = item.price;
+
+          body.append(title, description);
+          article.append(body, dots, price);
+          fragment.appendChild(article);
+        });
+
+        menuItemsContainer.replaceChildren(fragment);
+      }
+
+      function activateTab(tab, moveFocus) {
+        const category = tab.dataset.category;
+
+        if (!menuData[category]) return;
+
+        tabs.forEach(function (item) {
+          const active = item === tab;
+
+          item.setAttribute("aria-selected", String(active));
+          item.setAttribute("tabindex", active ? "0" : "-1");
+        });
+
+        renderMenu(category);
+        menuItemsContainer.setAttribute("aria-labelledby", tab.id);
+
+        if (moveFocus) {
+          tab.focus();
+        }
+      }
+
+      tabs.forEach(function (tab, index) {
+        tab.addEventListener("click", function () {
+          activateTab(tab, false);
+        });
+
+        tab.addEventListener("keydown", function (event) {
+          let nextIndex = index;
+
+          if (event.key === "ArrowRight") {
+            nextIndex = (index + 1) % tabs.length;
+          } else if (event.key === "ArrowLeft") {
+            nextIndex = (index - 1 + tabs.length) % tabs.length;
+          } else if (event.key === "Home") {
+            nextIndex = 0;
+          } else if (event.key === "End") {
+            nextIndex = tabs.length - 1;
+          } else {
+            return;
+          }
+
+          event.preventDefault();
+          activateTab(tabs[nextIndex], true);
+        });
+      });
+
+      /* ---------- Форма бронирования ---------- */
+
+      const form = document.getElementById("booking-form");
+      const formStatus = document.getElementById("form-status");
+
+      const fields = {
+        name: document.getElementById("guest-name"),
+        phone: document.getElementById("guest-phone"),
+        date: document.getElementById("visit-date"),
+        time: document.getElementById("visit-time"),
+        guests: document.getElementById("guest-count"),
+        comment: document.getElementById("guest-comment"),
+        consent: document.getElementById("demo-consent")
+      };
+
+      const errorElements = {
+        name: document.getElementById("name-error"),
+        phone: document.getElementById("phone-error"),
+        date: document.getElementById("date-error"),
+        time: document.getElementById("time-error"),
+        guests: document.getElementById("guests-error"),
+        consent: document.getElementById("consent-error")
+      };
+
+      function localDateString(date) {
+        const year = date.getFullYear();
+        const month = String(date.getMonth() + 1).padStart(2, "0");
+        const day = String(date.getDate()).padStart(2, "0");
+
+        return year + "-" + month + "-" + day;
+      }
+
+      function setMinimumDate() {
+        if (!fields.date) return;
+
+        // Локальная дата, без ошибки из-за UTC-смещения.
+        const today = localDateString(new Date());
+
+        fields.date.min = today;
+
+        // Если выбранная дата уже прошла, очищаем поле.
+        if (fields.date.value && fields.date.value < today) {
+          fields.date.value = "";
+        }
+      }
+
+      setMinimumDate();
+
+      window.addEventListener("focus", setMinimumDate);
+
+      function setFieldError(fieldName, message) {
+        const field = fields[fieldName];
+        const error = errorElements[fieldName];
+
+        if (field) {
+          field.setAttribute("aria-invalid", message ? "true" : "false");
+        }
+
+        if (error) {
+          error.textContent = message;
+        }
+      }
+
+      function clearErrors() {
+        ["name", "phone", "date", "time", "guests"].forEach(function (key) {
+          setFieldError(key, "");
+        });
+
+        if (errorElements.consent) {
+          errorElements.consent.textContent = "";
+        }
+
+        if (fields.consent) {
+          fields.consent.setAttribute("aria-invalid", "false");
+        }
+
+        if (formStatus) {
+          formStatus.textContent = "";
+          formStatus.className = "form-status";
+        }
+      }
+
+      function validateForm() {
+        clearErrors();
+        setMinimumDate();
+
+        let isValid = true;
+        let firstInvalidField = null;
+
+        function invalidate(fieldName, message) {
+          setFieldError(fieldName, message);
+          isValid = false;
+
+          if (!firstInvalidField) {
+            firstInvalidField = fields[fieldName];
+          }
+        }
+
+        const name = fields.name.value.trim();
+        const phone = fields.phone.value.trim();
+        const date = fields.date.value;
+        const time = fields.time.value;
+        const guests = fields.guests.value;
+
+        if (name.length < 2) {
+          invalidate("name", "Укажите имя — не менее двух символов.");
+        }
+
+        if (name.length > 80) {
+          invalidate("name", "Имя должно содержать не более 80 символов.");
+        }
+
+        // Проверяем телефон по количеству цифр и допустимым символам.
+        // Маскировка номера не требуется.
+        const phoneDigits = phone.replace(/\D/g, "");
+        const phoneAllowedCharacters = /^[+\d\s().-]+$/;
+
+        if (
+          phoneDigits.length < 10 ||
+          phoneDigits.length > 15 ||
+          !phoneAllowedCharacters.test(phone)
+        ) {
+          invalidate(
+            "phone",
+            "Введите корректный номер телефона с кодом страны."
+          );
+        }
+
+        if (!date) {
+          invalidate("date", "Выберите дату посещения.");
+        } else if (date < localDateString(new Date())) {
+          invalidate("date", "Нельзя выбрать прошедшую дату.");
+        }
+
+        if (!time) {
+          invalidate("time", "Выберите время посещения.");
+        }
+
+        if (time && (time < "08:00" || time > "21:00")) {
+          invalidate(
+            "time",
+            "Выберите время в пределах режима работы: 08:00–22:00."
+          );
+        }
+
+        if (!guests) {
+          invalidate("guests", "Укажите количество гостей.");
+        }
+
+        if (!fields.consent.checked) {
+          fields.consent.setAttribute("aria-invalid", "true");
+          errorElements.consent.textContent =
+            "Для продолжения необходимо отметить согласие.";
+          isValid = false;
+
+          if (!firstInvalidField) {
+            firstInvalidField = fields.consent;
+          }
+        }
+
+        if (!isValid && firstInvalidField) {
+          firstInvalidField.focus();
+        }
+
+        return isValid;
+      }
+
+      if (form) {
+        // Убираем сообщение об ошибке после исправления поля.
+        Object.keys(errorElements).forEach(function (key) {
+          const field = fields[key];
+          if (!field) return;
+
+          const eventName = key === "consent" ? "change" : "input";
+
+          field.addEventListener(eventName, function () {
+            setFieldError(key, "");
+
+            if (key === "consent" && fields.consent.checked) {
+              errorElements.consent.textContent = "";
+            }
+
+            field.setAttribute("aria-invalid", "false");
+          });
+        });
+
+        fields.date.addEventListener("change", function () {
+          setMinimumDate();
+
+          if (fields.date.value && fields.date.value >= localDateString(new Date())) {
+            setFieldError("date", "");
+          }
+        });
+
+        form.addEventListener("submit", async function (event) {
+          event.preventDefault();
+
+          if (!validateForm()) {
+            formStatus.textContent =
+              "Пожалуйста, проверьте отмеченные поля.";
+            formStatus.className = "form-status form-status--error";
+            return;
+          }
+
+          /*
+            Данные остаются в памяти текущей страницы.
+            Мы не используем localStorage, cookies или сторонние
+            сервисы для сохранения пользовательских данных.
+          */
+
+          if (CONFIG.demoMode || !CONFIG.bookingEndpoint) {
+            formStatus.textContent =
+              "Демонстрационная форма: заявка не отправлена. " +
+              "Подключите сервис бронирования для приёма заявок.";
+            formStatus.className = "form-status form-status--success";
+            return;
+          }
+
+          /*
+            Интеграция с реальным API.
+            Перед включением замените endpoint на собственный HTTPS URL.
+            Настройте серверную валидацию, политику обработки данных,
+            CORS, ограничение запросов и защиту от спама.
+          */
+
+          const submitButton = form.querySelector('button[type="submit"]');
+          const originalButtonText = submitButton.textContent;
+
+          submitButton.disabled = true;
+          submitButton.textContent = "Отправка...";
+
+          try {
+            const payload = {
+              name: fields.name.value.trim(),
+              phone: fields.phone.value.trim(),
+              date: fields.date.value,
+              time: fields.time.value,
+              guests: fields.guests.value,
+              comment: fields.comment.value.trim()
+            };
+
+            const response = await fetch(CONFIG.bookingEndpoint, {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json"
+              },
+              body: JSON.stringify(payload)
+            });
+
+            if (!response.ok) {
+              throw new Error("Booking request failed");
+            }
+
+            formStatus.textContent =
+              "Заявка отправлена. Ожидайте подтверждения от кофейни.";
+            formStatus.className = "form-status form-status--success";
+
+            form.reset();
+            setMinimumDate();
+          } catch (error) {
+            formStatus.textContent =
+              "Не удалось отправить заявку. Попробуйте позже " +
+              "или свяжитесь с кофейней другим способом.";
+            formStatus.className = "form-status form-status--error";
+          } finally {
+            submitButton.disabled = false;
+            submitButton.textContent = originalButtonText;
+          }
+        });
+      }
+
+      /* ---------- Анимация появления ---------- */
+
+      const revealElements = document.querySelectorAll(".reveal");
+      const reducedMotion = window.matchMedia(
+        "(prefers-reduced-motion: reduce)"
+      ).matches;
+
+      if ("IntersectionObserver" in window && !reducedMotion) {
+        const revealObserver = new IntersectionObserver(
+          function (entries, observer) {
+            entries.forEach(function (entry) {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("is-visible");
+                observer.unobserve(entry.target);
+              }
+            });
+          },
+          {
+            threshold: 0.08,
+            rootMargin: "0px 0px -25px 0px"
+          }
+        );
+
+        revealElements.forEach(function (element) {
+          revealObserver.observe(element);
+        });
+      } else {
+        revealElements.forEach(function (element) {
+          element.classList.add("is-visible");
+        });
+      }
+    });
+  </script>
+</body>
+</html>
