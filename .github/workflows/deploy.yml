@@ -3,6 +3,9 @@ name: Deploy static site
 on:
   push:
     branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:
 
 permissions:
   contents: read
@@ -10,7 +13,32 @@ permissions:
   id-token: write
 
 jobs:
+  lint:
+    name: Проверка HTML и CSS
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install linters
+        run: npm ci
+
+      - name: Lint HTML (HTMLHint)
+        run: npm run lint:html
+
+      - name: Lint CSS (Stylelint)
+        run: npm run lint:css
+
   deploy:
+    name: Публикация на GitHub Pages
+    needs: lint
+    if: github.event_name != 'pull_request'
     runs-on: ubuntu-latest
     environment:
       name: github-pages
